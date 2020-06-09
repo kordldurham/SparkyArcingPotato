@@ -1,0 +1,55 @@
+body {
+    background-color: #fffcb5;
+    font-family: Roboto, cursive;
+}
+
+h1 {
+    color: black;
+    font-size: 40px;
+    text-align: center;
+}
+
+.center-text {
+    text-align: center;
+}
+
+.med-text {
+    font-size: 20px
+}
+
+.smol-text {
+    font-size: 14px;
+}
+
+.center-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.imgsze {
+    width: 50px;
+    height: 50px;
+}
+
+.border {
+    border-color: #fbf695;
+    border-width: 5px;
+    border-radius: 10%;
+    border-style: solid;
+}
+
+.button {
+    background-color: #fad145;
+    border-width: 3px;
+    border-color: #faa128;
+    border-style: solid;
+    border-radius: 10%;
+    color: black;
+    padding: 4px 27px;
+    text-align: center;
+    text-decoration: line;
+    display: inline-block;
+    font-size: 18px;
+}
