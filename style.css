@@ -28,11 +28,6 @@ h1 {
     width: 50%;
 }
 
-.imgsze {
-    width: 50px;
-    height: 50px;
-}
-
 .border {
     border-color: #fbf695;
     border-width: 5px;
@@ -42,14 +37,70 @@ h1 {
 
 .button {
     background-color: #fad145;
-    border-width: 3px;
+    border-width: 2px;
     border-color: #faa128;
     border-style: solid;
     border-radius: 10%;
     color: black;
-    padding: 4px 27px;
+    padding: 0px 27px;
     text-align: center;
     text-decoration: line;
     display: inline-block;
     font-size: 18px;
+}
+
+.field-marge {
+    margin-left: 32%;
+    margin-right: 32%;
+}
+
+.field-color {
+    background-color: #f5ef9a;
+    border-width: 3px;
+    border-color: #f2cf57;
+    border-style: dotted;
+    border-radius: 4%;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    max-height: 100%;
+    max-width: 100%;
+    height: 400px;
+    width: 400px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #000000;
+}
+
+li {
+    float: left;
+}
+
+li a,
+.dropbtn {
+    display: inline-block;
+    color: #f3e47a;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover,
+.dropdown:hover .dropbtn {
+    background-color: #cbb412;
+}
+
+ul {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
 }
