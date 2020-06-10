@@ -1,8 +1,15 @@
 <DOCTYPE html>
     <html>
+    <ul>
+        <li><a class="active" href="#It">It</a></li>
+        <li><a class="active" href="#Is">Is</a></li>
+        <li><a class="active" href="#Wednesday">Wednesday</a></li>
+        <li style="float:right"><a class="active" href="#My_Dudes">My Dudes</a></li>
+        </li>
+    </ul>
 
     <head>
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="pretty.css">
         <script src="https://kit.fontawesome.com/2a0a0f4758.js" crossorigin="anonymous"></script>
     </head>
 
@@ -13,10 +20,15 @@
             <div>
                 <h1>Is it Wednesday, my dudes?</h1>
                 <form class="center-text med-text" action="/is it wednesday?">
-                    <label><input type="radio" name="yes-no" checked> It is Wednesday</label>
-                    <label><input type="radio" name="yes-no"> It is not Wednesday</label><br>
-                    <label><input type="checkbox" name="My dudes" checked> My dudes</label><br>
+                    <fieldset class="field-marge field-color">
+                        <legend class="smol-text">Is it Wednesday? tell us here!</legend>
+                        <label><input type="radio" name="yes-no" checked> It is Wednesday</label>
+                        <label><input type="radio" name="yes-no"> It is not Wednesday</label><br>
+                        <label><input type="checkbox" name="My dudes" checked> My dudes</label><br>
+                    </fieldset>
+                    <br>
                     <button class="button" type="submit">Ayyy</button>
+
                 </form>
                 <h2 class="center-text med-text">
                     Chances are that if you are viewing this page it is because, in fact, it IS Wednesday.
