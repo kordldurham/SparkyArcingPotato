@@ -1,50 +1,52 @@
-    <DOCTYPE html>
-        <html>
-        <ul class="shadow">
-            <li><a class="active" href="#It">It</a></li>
-            <li><a class="active" href="#Is">Is</a></li>
-            <li><a class="active" href="#Wednesday">Wednesday</a></li>
-            <li style="float:right"><a class="active" href="#My_Dudes">My Dudes</a></li>
-            </li>
-        </ul>
+<DOCTYPE html>
+    <html>
+    <ul class="shadow">
+        <li><a class="active" href="#It">It</a></li>
+        <li><a class="active" href="#Is">Is</a></li>
+        <li><a class="active" href="#Wednesday">Wednesday</a></li>
+        <li style="float:right"><a class="active" href="#My_Dudes">My Dudes</a></li>
+        </li>
+    </ul>
 
-        <head>
-            <link rel="stylesheet" href="pretty.css">
-            <script src="https://kit.fontawesome.com/2a0a0f4758.js" crossorigin="anonymous"></script>
-        </head>
+    <head>
+        <link rel="stylesheet" href="pretty.css">
+        <script src="https://kit.fontawesome.com/2a0a0f4758.js" crossorigin="anonymous"></script>
+    </head>
 
-        <link href="https://fonts.googleapis.com/css2?family=Chelsea+Market&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Chelsea+Market&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
 
-        <body>
-            <main>
-                <div>
-                    <h1>Is it Wednesday, my dudes?</h1>
-                    <form method="post" action="contact.php" class="center-text med-text" target="_blank">
-                        <fieldset class="field-marge field-color shadow">
-                            <legend class="smol-text">Is it Wednesday? Tell us here!</legend>
-                            <label><input type="radio" name="yes-no" checked> It is Wednesday</label>
-                            <label><input type="radio" name="yes-no"> It is not Wednesday</label><br>
-                            <label><input type="checkbox" name="My dudes" checked> My dudes</label><br>
-                            <label><input type="text" name="name" placeholder="Name"></label>
-                        </fieldset>
-                        <br>
-                            <button class="button shadow" type="submit">Ayyy</button>
-                    </form>
-                    <h2 class="center-text med-text">
-                        Chances are that if you are viewing this page it is because, in fact, it IS Wednesday.
-                    </h2>
-                    <p class="center-text smol-text">
-                        (If you are viewing this page on a day other than Wednesday a grave error has occured and you should leave immediately as this is very embarassing for the both of us.) :(
-                    </p>
-                </div>
+    <body>
+        <main>
+            <div>
+                <h1>Is it Wednesday, my dudes?</h1>
                 <div class="center-img"><img class="border" src="https://i.kym-cdn.com/photos/images/newsfeed/001/091/264/665.jpg"></div>
-                <i class="fab fa-reddit-square med-text"></i>
-                <a class="med-text" href="https://www.reddit.com/user/SparkyArcingPotato">SparkyArcingPotato</a><br>
-                <i class="fab fa-github med-text"></i>
-                <a class="med-text" href="https://github.com/kordldurham/SparkyArcingPotato">SparkyArcingPotato Repository</a><br>
-                <i class="fab fa-paypal med-text"></i>
-                <a class="med-text" href="https://paypal.me/SparkyArcingPotato?locale.x=en_US">PayPal Donations</a><br>
-
-            </main>
-        </body>
-        <footer></footer>
+                <h2 class="center-text med-text">
+                    Chances are that if you are viewing this page it is because, in fact, it IS Wednesday.
+                </h2>
+                <p class="center-text smol-text">
+                    (If you are viewing this page on a day other than Wednesday a grave error has occured and you should leave immediately as this is very embarassing for the both of us.) :(
+                </p>
+                <form method="post" class="center-text med-text" action="#paypal">
+                    <fieldset class="field-marge field-color shadow">
+                        <legend class="smol-text">Is it Wednesday? Tell us here!</legend>
+                        <label><input type="radio" name="yes-no" checked required> It is Wednesday</label>
+                        <label><input type="radio" name="yes-no" required> It is not Wednesday</label><br>
+                        <label><input type="checkbox" name="My dudes" checked> My dudes</label><br>
+                        <label><input type="text" name="name" placeholder="Name"></label><br>
+                        <label><input type="text" name="email" placeholder="Email"></label><br>
+                    </fieldset>
+                    <br>
+                    <button target="_blank" class="button shadow" type="submit">Ayyy</button></a>
+                </form>
+            </div>
+            <i class="fab fa-reddit-square med-text"></i>
+            <a class="med-text justice" href="https://www.reddit.com/user/SparkyArcingPotato">r/SparkyArcingPotato</a><br>
+            <i class="fab fa-github med-text"></i>
+            <a class="med-text justice" href="https://github.com/kordldurham/SparkyArcingPotato">This Pages' Repository</a><br>
+            <i class="fab fa-paypal med-text"></i>
+            <a id="paypal" class="med-text justice" href="https://paypal.me/SparkyArcingPotato?locale.x=en_US">PayPal Donations</a><br>
+            <i class="fas fa-frog med-text"></i>
+            <a class="med-text justice" href="https://kordldurham.github.io/SparkyArcingPotato/">For MY Convenience</a>
+        </main>
+    </body>
+    <footer></footer>
