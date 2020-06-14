@@ -15,7 +15,7 @@ if($_POST["submit"]) {
 ?}
 
 <!DOCTYPE html>
-
+<link rel="stylesheet" href="pretty.css">
 <html>
 <head>
     <meta charset="utf-8">
