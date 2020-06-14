@@ -1,12 +1,13 @@
 body {
     background-color: #fffcb5;
-    font-family: Roboto, Arial;
+    font-family: Roboto, cursive;
 }
 
 h1 {
     color: black;
     font-size: 40px;
     text-align: center;
+    font-weight: 1200;
 }
 
 .center-text {
@@ -96,11 +97,28 @@ li a,
 
 li a:hover,
 .dropdown:hover .dropbtn {
-    background-color: #cbb412;
+    background-color: #0000009d;
+    text-decoration: underline;
 }
 
 ul {
     position: -webkit-sticky;
     position: sticky;
     top: 0;
+}
+
+button:hover {
+    background-color: #f5e992;
+}
+
+a:hover {
+    color: #cbb412;
+}
+
+.shadow {
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.19), 0 8px 8px rgba(72, 64, 6, 0.23), 0 5px 5px rgba(100, 75, 10, 0.35);
+}
+
+label:hover {
+    color: #cbb412;
 }
