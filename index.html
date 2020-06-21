@@ -6,11 +6,11 @@
       <i class="fa fa-caret-down"></i>
     </button>
     <div class="dropdown-content">
-      <a href="https://kordldurham.github.io/surveyportfolio/"><i class="fas fa-poll-h hov" target="_blank"></i> Survey</a>
-      <a href="https://kordldurham.github.io/redesigned-doodle/"><i class="fas fa-meteor" target="_blank"></i> Wiki Entry</a>
-        <a style="color:grey" href="#"><i class="fas fa-low-vision"></i> <s>Product Page</s></a>
-        <a style="color:grey" href="#"><i class="fas fa-user-tie"></i> <s>Portfolio</s></a>
-      <a href="https://kordldurham.github.io/SparkyArcingPotato/"><i class="fas fa-frog" target="_blank"></i> Wednesday</a>
+      <a href="https://kordldurham.github.io/surveyportfolio/" target="_blank"><i class="fas fa-poll-h hov"></i> Survey</a>
+      <a href="https://kordldurham.github.io/redesigned-doodle/" target="_blank"><i class="fas fa-meteor"></i> Wiki Entry</a>
+      <a style="color:grey" href="#"><i class="fas fa-low-vision"></i> <s>Product Page</s></a>
+      <a style="color:grey" href="#"><i class="fas fa-user-tie"></i> <s>Portfolio</s></a>
+      <a href="https://kordldurham.github.io/SparkyArcingPotato/" target="_blank"><i class="fas fa-frog"></i> Wednesday</a>
     </div>
   </div>
     <div class="dropdown">
@@ -59,12 +59,12 @@ function myFunction() {
                 <p class="center-text smol-text">
                     (If you are viewing this page on a day other than Wednesday a grave error has occured and you should leave immediately as this is very embarassing for the both of us.) :(
                 </p>
-                <form method="post" class="center-text med-text" action="#redirect">
+                <form id="Wed_form" class="center-text med-text" action="#redirect"  method="get" action="/form_submit.php">
                     <fieldset class="field-marge field-color shadow">
                         <legend class="smol-text">Is it Wednesday? Tell us here!</legend>
-                        <label><input class="hovinput" type="radio" name="yes-no" checked required> It is Wednesday</label>
-                        <label><input class="hovinput" type="radio" name="yes-no" required> It is not Wednesday</label><br>
-                        <label><input class="hovinput" type="checkbox" name="My dudes" checked> My dudes</label><br>
+                        <label><input class="hovinput" type="radio" name="yes-no" value="yes" checked required> It is Wednesday</label>
+                        <label><input class="hovinput" type="radio" name="yes-no" value="no" required> It is not Wednesday</label><br>
+                        <label><input class="hovinput" type="checkbox" name="My dudes" value="mydudes" checked> My dudes</label><br>
                         <label><input type="text" name="name" placeholder="First Name"></label>
                         <label><input type="text" name="name" placeholder="Last Name"></label><br>
                         <label><input type="text" name="email" placeholder="Email"></label><br>
