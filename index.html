@@ -1,21 +1,46 @@
 <DOCTYPE html>
     <html>
-    <ul id="redirect" class="shadow">
-        <li><a class="active" href="#It">It</a></li>
-        <li><a class="active" href="#Is">Is</a></li>
-        <li><a class="active" href="#Wednesday">Wednesday</a></li>
-        <li style="float:right"><a class="active" href="#My_Dudes">My Dudes</a></li>
-        </li>
-    </ul>
+ <div class="topnav" id="myTopnav">
+  <div class="dropdown">
+    <button class="dropbtn"><i class="fas fa-project-diagram"></i> Projects
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="https://kordldurham.github.io/surveyportfolio/"><i class="fas fa-poll-h hov"></i> Example Survey</a>
+      <a href="#">Shuckle Entry</a>
+      <a href="#">Product Page</a>
+      <a href="#">Portfolio</a>
+      <a href="#">Wednesday, My Dudes</a>
+    </div>
+  </div>
+  <a class="active hov" href="https://github.com/kordldurham" target="_blank"><i class="fab fa-github hov"></i> GitHub</a>
+  <a class="active hov" href="mail:devkorddurham@gmail.com" target="_blank"><i class="fas fa-at hov"></i> Email</a>
+  <a class="active hov" href="https://www.reddit.com/user/SparkyArcingPotato" target="_blank"><i class="fab fa-reddit-square hov"></i> Reddit</a>
+  <a class="active hov" href="https://paypal.me/SparkyArcingPotato?locale.x=en_US" target="_blank"><i class="fab fa-paypal hov"></i> Donations</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+} 
+</script>
 
     <head>
         <link rel="stylesheet" href="pretty.css">
+        <link rel="stylesheet" href="navbar_build.css">
         <script src="https://kit.fontawesome.com/2a0a0f4758.js" crossorigin="anonymous"></script>
     </head>
 
     <link href="https://fonts.googleapis.com/css2?family=Chelsea+Market&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
 
     <body>
+    <script src="index.js"></script> 
         <main>
             <div>
                 <h1>Is it Wednesday, my dudes?</h1>
@@ -32,26 +57,13 @@
                         <label><input class="hovinput" type="radio" name="yes-no" checked required> It is Wednesday</label>
                         <label><input class="hovinput" type="radio" name="yes-no" required> It is not Wednesday</label><br>
                         <label><input class="hovinput" type="checkbox" name="My dudes" checked> My dudes</label><br>
-                        <label><input type="text" name="name" placeholder="Name"></label><br>
+                        <label><input type="text" name="name" placeholder="First Name"></label>
+                        <label><input type="text" name="name" placeholder="Last Name"></label><br>
                         <label><input type="text" name="email" placeholder="Email"></label><br>
                     </fieldset>
                     <br> 
                     <button onclick="alert('This information has been submitted to our top researchers, please stand by for further instructions.')" target="_blank" class="button shadow" type="submit">Ayyy</button></a>
                 </form>
-            </div>
-            </div>
-            <i class="fab fa-reddit-square med-text"></i>
-            <a class="med-text justice hov" href="https://www.reddit.com/user/SparkyArcingPotato">r/SparkyArcingPotato</a><br>
-            <i class="fab fa-github med-text"></i>
-            <a class="med-text justice hov" href="https://github.com/kordldurham/SparkyArcingPotato">This Pages' Repository</a><br>
-            <i class="fab fa-paypal med-text"></i>
-            <a class="med-text justice hov" href="https://paypal.me/SparkyArcingPotato?locale.x=en_US">PayPal Donations</a><br>
-            <i class="fas fa-frog med-text"></i>
-            <a class="med-text justice hov" href="https://kordldurham.github.io/SparkyArcingPotato/">For MY Convenience</a><br>
-            <i class="fas fa-at med-text"></i>
-            <a class="med-text justice hov" href="mail:devkorddurham@gmail.com">Email me so I feel important!</a><br>
-            <i class="fas fa-poll-h med-text"></i>
-            <a class="med-text justice hov" href="https://kordldurham.github.io/surveyportfolio/" target="_blank">A Customer Service Survey</a><br>
         </main>
     </body>
     <footer></footer>
