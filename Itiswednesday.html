@@ -1,0 +1,70 @@
+<DOCTYPE html>
+<html>
+  <head>
+    <link id="stylesheet1" rel="stylesheet" href="pretty.css">
+    <link id="stylesheet2" rel="stylesheet" href="navbar_build.css">
+    <script src="https://kit.fontawesome.com/2a0a0f4758.js" crossorigin="anonymous"></script>      <link href="https://fonts.googleapis.com/css2?family=Chelsea+Market&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+    <title id="btitle">A brief insight into Wednesdays</title>
+  </head>
+  <div id="navbar" class="topnav" id="myTopnav">
+  <div class="dropdown">
+    <button id="projects" class="dropbtn"><i class="fas fa-project-diagram"></i> Projects
+    <i class="fa fa-caret-down"></i></button>
+  <div class="dropdown-content">
+    <a id="survey" href="https://kordldurham.github.io/surveyportfolio/" target="_blank"><i class="fas fa-poll-h hov"></i> Survey</a>
+    <a id = "shuckle" href="https://kordldurham.github.io/redesigned-doodle/" target="_blank"><i class="fas fa-meteor"></i> Wiki Entry</a>
+    <a id = "productPage" style="color:grey" href="#"><i class="fas fa-low-vision"></i> <s>Product Page</s></a>
+    <a id = "portfolio"style="color:grey" href="#"><i class="fas fa-user-tie"></i> <s>Portfolio</s></a>
+    <a id = "clock" href="https://kordldurham.github.io/impractical_clock/" target="_blank"><i class="fas fa-clock"></i> Impractical Clock</a>
+    <a id="wednesday"href="https://kordldurham.github.io/SparkyArcingPotato/" target="_blank"><i class="fas fa-frog"></i> Wednesday</a>
+  </div>
+  </div>
+  <div class="dropdown">
+    <button id="certifications" class="dropbtn"><i class="fas fa-book"></i> Certifications
+    <i class="fa fa-caret-down"></i></button>
+    <div class="dropdown-content">
+    <a id="RWD"href="https://www.freecodecamp.org/certification/kordldurham/responsive-web-design" target="_blank"><i class="fas fa-code"></i> Responsive Web Design</a>
+  </div>
+  </div>
+    <a id="gitHubLink" class="active hov" href="https://github.com/kordldurham" target="_blank"><i class="fab fa-github hov"></i> GitHub</a>
+    <a id="emailLink" class="active hov" href="mail:devkorddurham@gmail.com" target="_blank"><i class="fas fa-at hov"></i> Email</a>
+    <a id="redditLink" class="active hov" href="https://www.reddit.com/user/SparkyArcingPotato" target="_blank"><i class="fab fa-reddit-square hov"></i> Reddit</a>
+    <a id="paypalLink" class="active hov" href="https://paypal.me/SparkyArcingPotato?locale.x=en_US" target="_blank"><i class="fab fa-paypal hov"></i> Donations</a>
+    <a href="javascript:void(0);" class="icon" onclick="navBar()">&#9776;</a>
+  </div>
+  <body>
+  <main>
+  <div>
+    <section>
+      <header><h1 id="title">Is it Wednesday, my dudes?</h1></header>
+  <div class="center-img"><img id="frogImg" class="border" sigcap="It is Wednesday, my dudes." alt="It is Wednesday, my dudes." src="https://i.kym-cdn.com/photos/images/newsfeed/001/091/264/665.jpg">
+    <h2 id="caption" class="center-text med-text">Chances are that if you are viewing this page it is because, in fact, it IS Wednesday.</h2>
+    <p id="apology" class="center-text smol-text">(If you are viewing this page on a day other than Wednesday a grave error has occured and you should leave immediately as this is very embarassing for the both of us.) :(</p>
+  </div>
+    </section>
+  </div>    
+    <section>
+      <form id="wedForm" class="med-text" action="#redirect"  method="get" action="/form_submit.php">
+        <fieldset id="wedForm" class="field-marge field-color shadow">
+          <legend id="wedLegend" class="smol-text">Is it Wednesday? Tell us here!</legend>
+          <label><input id="radioyes" class="hovinput" type="radio" name="yes-no" value="yes" required> It is Wednesday</label>
+          <label><input id="radiono" class="hovinput" type="radio" name="yes-no" value="no" required> It is not Wednesday</label><br>
+          <label><input id="myDudes" class="hovinput" type="checkbox" name="My dudes" value="mydudes"> My dudes</label><br>
+          <label><input id="fName" type="text" name="name" placeholder="First Name" required></label>
+          <label><input id="lName" type="text" name="name" placeholder="Last Name" required></label><br>
+          <label><input size="45" id="eMailForm" type="email" name="email" placeholder="Email" required></label><br>
+        </fieldset>
+        <br> 
+          <button id="submitButton" onclick="alert('This information has been submitted to our top researchers, please stand by for further instructions.')" target="_blank" class="button shadow" type="submit">Ayyy</button></a>
+      </form>
+    </section>
+</main>
+</body>
+<hr>
+    <aside>
+  <div class="footdiv">
+    <footer> &copy; 2020 "A brief insight into Wednesdays" by Kord Durham</footer>
+  </div>
+  <script src="index.js"></script> 
+    </aside>
+</html>
