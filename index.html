@@ -1,6 +1,7 @@
 <DOCTYPE html>
-<html>
+<html lang="en">
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link id="stylesheet1" rel="stylesheet" href="pretty.css">
     <link id="stylesheet2" rel="stylesheet" href="navbar_build.css">
     <script src="https://kit.fontawesome.com/2a0a0f4758.js" crossorigin="anonymous"></script>      <link href="https://fonts.googleapis.com/css2?family=Chelsea+Market&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
@@ -32,6 +33,13 @@
     <a href="javascript:void(0);" class="icon" onclick="navBar()">&#9776;</a>
   </div>
   <body>
+  <div id="wednesday-popup" class="wednesday-popup" role="dialog" aria-modal="true" aria-labelledby="wednesday-popup-title" hidden>
+    <div class="wednesday-popup-card shadow">
+      <h2 id="wednesday-popup-title">Is it Wednesday, my dudes?</h2>
+      <p id="wednesday-popup-message"></p>
+      <button id="wednesday-popup-close" type="button" class="button">Ayyy, got it!</button>
+    </div>
+  </div>
   <main>
   <div>
     <section>
