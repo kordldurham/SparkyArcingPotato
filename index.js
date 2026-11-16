@@ -1,26 +1,33 @@
-console.log("index.js is linked to itiswednesday.html");
+'use strict';
 
 function getWednesday() {
-    let day = new Date().getUTCDay();
-    return day;
+    return new Date().getUTCDay();
 }
 
-console.log(getWednesday())
+// Browser alerts triggered during loading may be suppressed on mobile.
+document.addEventListener('DOMContentLoaded', () => {
+    const popup = document.getElementById('wednesday-popup');
+    const message = document.getElementById('wednesday-popup-message');
+    const close = document.getElementById('wednesday-popup-close');
+    if (!popup || !message || !close) return;
 
-let isItWednesday = getWednesday()
-if (isItWednesday === 3) {
-    alert("It is Wednesday, my dudes.");
-} else {
-    alert("It is not Wednesday, my dudes.")
-}
+    message.textContent = getWednesday() === 3
+        ? 'It is Wednesday, my dudes.'
+        : 'It is not Wednesday, my dudes.';
+    popup.hidden = false;
+    close.focus();
 
-console.log(isItWednesday)
+    const dismiss = () => { popup.hidden = true; };
+    close.addEventListener('click', dismiss);
+    popup.addEventListener('click', (event) => {
+        if (event.target === popup) dismiss();
+    });
+    document.addEventListener('keydown', (event) => {
+        if (event.key === 'Escape' && !popup.hidden) dismiss();
+    });
+});
 
 function navBar() {
-    var nav = document.getElementById("myTopnav");
-    if (nav.className === "topnav") {
-        nav.className += " responsive";
-    } else {
-        nav.className = "topnav";
-    }
+    const nav = document.getElementById('navbar');
+    if (nav) nav.classList.toggle('responsive');
 }
