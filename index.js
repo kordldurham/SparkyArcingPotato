@@ -1,7 +1,7 @@
 'use strict';
 
 function getWednesday() {
-    return new Date().getUTCDay();
+    return new Date().getDay();
 }
 
 // Browser alerts triggered during loading may be suppressed on mobile.
