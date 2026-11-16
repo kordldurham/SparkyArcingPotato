@@ -178,3 +178,39 @@ input[type=email] {
         display: block;
     }
 }
+/* Touch-friendly on-page Wednesday popup replaces blocked mobile alert dialogs. */
+.wednesday-popup[hidden] { display: none !important; }
+.wednesday-popup {
+    position: fixed;
+    inset: 0;
+    z-index: 10000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 18px;
+    background: rgba(0, 0, 0, .67);
+}
+.wednesday-popup-card {
+    box-sizing: border-box;
+    width: min(100%, 440px);
+    max-height: calc(100dvh - 36px);
+    overflow-y: auto;
+    padding: 24px 20px;
+    border: 3px dotted #f2cf57;
+    border-radius: 12px;
+    background: linear-gradient(45deg, #f5ef9a, #ccaa39);
+    text-align: center;
+    color: #000;
+}
+.wednesday-popup-card h2 {
+    font-family: 'Chelsea Market', cursive;
+    font-size: clamp(1.2rem, 5vw, 1.8rem);
+    line-height: 1.4;
+    margin-top: 0;
+}
+.wednesday-popup-card p { font-size: 1.15rem; line-height: 1.5; }
+.wednesday-popup-card .button {
+    min-height: 44px;
+    padding: 10px 22px;
+    cursor: pointer;
+}
