@@ -249,3 +249,35 @@ main { width: 100%; padding: 14px 12px 24px; }
     .wednesday-popup-card p { font-size: 1rem; }
     .footdiv { padding: 20px 12px; font-size: .85rem; text-align: center; }
 }
+
+/* Mobile readability adjustment: larger type and controls at phone widths. */
+.wednesday-popup-card,
+.wednesday-popup-card h2,
+.wednesday-popup-card p { text-align: center; }
+@media (max-width: 600px) {
+    body { font-size: 18px; line-height: 1.5; }
+    h1 { font-size: clamp(1.8rem, 7vw, 2.35rem); line-height: 1.3; }
+    #caption { font-size: 1.2rem; line-height: 1.5; }
+    #apology { font-size: 1.05rem; line-height: 1.55; }
+    #frogImg { width: min(100%, 380px); max-width: 100%; }
+    #wedForm { font-size: 1.15rem; }
+    #wedLegend { font-size: 1rem; line-height: 1.5; }
+    #wedFields { padding: 18px 14px 22px; }
+    #wedFields label { line-height: 1.85; }
+    #wedFields input[type="text"],
+    #wedFields input[type="email"] {
+        font-size: 18px;
+        min-height: 48px;
+        padding: 10px 12px;
+    }
+    #wedFields input[type="radio"],
+    #wedFields input[type="checkbox"] {
+        min-width: 21px;
+        min-height: 21px;
+    }
+    #submitButton { font-size: 1.2rem; min-height: 48px; }
+    .wednesday-popup-card h2 { font-size: 1.55rem; }
+    .wednesday-popup-card p { font-size: 1.2rem; }
+    .wednesday-popup-card .button { font-size: 1.1rem; }
+    .footdiv { font-size: 1rem; }
+}
